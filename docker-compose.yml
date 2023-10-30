@@ -23,10 +23,10 @@ services:
     volumes:
       - ./mysql:/var/lib/mysql
     environment:
-      - MYSQL_USER: mysql
-      - MYSQL_PASSWORD: 1234
-      - MYSQL_PASSWORD: 1234
-      - MYSQL_DATABASE: db_ptsp
+      - MYSQL_USER=mysql
+      - MYSQL_PASSWORD=1234
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=db_ptsp
 
   adminer:
     image: adminer
