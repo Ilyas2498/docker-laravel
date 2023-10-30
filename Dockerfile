@@ -4,7 +4,7 @@ FROM php:8.1-fpm
 COPY composer.lock composer.json /var/www/
 
 # Set working directory
-WORKDIR /var/www/
+WORKDIR /var/www
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
